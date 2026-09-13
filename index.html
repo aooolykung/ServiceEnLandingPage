@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceEngineering (Overhaul) | บริการ Overhaul เครื่องจักร & ระบบไฟฟ้า PLC HMI</title>
+    <meta name="description"
+        content="บริการ Overhaul เครื่องจักร ปรับปรุงเครื่องจักร รับทำระบบไฟฟ้า Control เครื่องจักร และระบบ PLC HMI (Mitsubishi & Omron) โดยทีมงานวิศวกรมืออาชีพ">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">Service<span class="highlight">Engineering</span></span>
+                    <span class="brand-sub">OVERHAUL & AUTOMATION</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> หน้าแรก</a>
+                <a href="#services" class="nav-item"><i class="fa-solid fa-wrench"></i> ขอบเขตบริการ</a>
+                <a href="#plc-showcase" class="nav-item"><i class="fa-solid fa-microchip"></i> ระบบ PLC HMI</a>
+                <a href="#gallery" class="nav-item"><i class="fa-solid fa-images"></i> ภาพผลงานจริง</a>
+                <a href="#estimator" class="nav-item"><i class="fa-solid fa-calculator"></i> ประเมินราคา</a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> ติดต่อเรา</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span>ส่งข้อมูลติดต่อ</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>หน่วยงาน ServiceEngineering (Overhaul)</span>
+                </div>
+                <h1 class="hero-title">
+                    ผู้เชี่ยวชาญการ <span class="gradient-text">Overhaul เครื่องจักร</span> <br>
+                    & ระบบไฟฟ้า Control PLC HMI
+                </h1>
+                <p class="hero-description">
+                    ให้บริการซ่อมบำรุงเชิงลึก Overhaul ปรับปรุงสมรรถภาพเครื่องจักรโรงงาน ออกแบบและประกอบตู้ควบคุมไฟฟ้า
+                    พร้อมเขียนโปรแกรมควบคุมอัตโนมัติด้วยระบบ <strong>PLC & HMI (Mitsubishi & Omron)</strong>
+                    ด้วยมาตรฐานวิศวกรรมระดับอุตสาหกรรม
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn btn-lg btn-primary btn-glow">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>ส่งข้อมูลติดต่อกลับ / ขอใบเสนอราคา</span>
+                    </a>
+                    <a href="#estimator" class="btn btn-lg btn-outline">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>ประเมินเนื้องานเบื้องต้น</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card-glass">
+                    <div class="glass-header">
+                        <div class="glass-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="glass-title">SYSTEM STATUS: READY FOR OVERHAUL</span>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <!-- Google Drive Live Photo preview -->
+                        <img src="https://lh3.googleusercontent.com/d/1iw2Fa0jbUHhJ0E7RRrEz7qRabqOqduM1"
+                            referrerpolicy="no-referrer" alt="Service Engineering Inspection" class="hero-img"
+                            id="hero-img-live"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1iw2Fa0jbUHhJ0E7RRrEz7qRabqOqduM1&sz=w1000'">
+                        <div class="image-overlay-badge">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <strong>วิศวกรผู้เชี่ยวชาญเฉพาะทาง</strong>
+                                <small>พร้อมเข้าตรวจสอบและดำเนินการ</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-footer">
+                        <div class="status-pill">
+                            <i class="fa-solid fa-bolt"></i> Electrical & Mechanical Complete Solution
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">OUR CORE CAPABILITIES</span>
+                <h2 class="section-title">ขอบเขตงานบริการหลักของ ServiceEngineering</h2>
+                <p class="section-desc">ครอบคลุมทุกมิติของการฟื้นฟู ปรับปรุง และเพิ่มประสิทธิภาพเครื่องจักรในระบบการผลิต
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="service-title">รับ Overhaul เครื่องจักร</h3>
+                    <p class="service-text">
+                        ถอดประกอบชิ้นส่วน ตรวจสอบระยะสึกหรอ (Tolerance & Alignment) เปลี่ยนลูกปืน ซีล ตลับลูกปืน เกียร์
+                        และชุดขับเคลื่อน คืนสภาพเครื่องจักรให้สมบูรณ์เหมือนใหม่
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Disassembly & Deep Inspection</li>
+                        <li><i class="fa-solid fa-check"></i> Wear Part Replacement & Rebuilding</li>
+                        <li><i class="fa-solid fa-check"></i> Precision Alignment & Testing</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="service-title">ปรับปรุง เครื่องจักร (Modify/Retrofit)</h3>
+                    <p class="service-text">
+                        ดัดแปลงและอัปเกรดเครื่องจักรเดิมให้ตอบโจทย์การผลิตยุคใหม่ เพิ่มความเร็วการทำงาน ปรับปรุงระบบ
+                        Safety Interlock และติดตั้งอุปกรณ์ช่วยอำนวยความสะดวก
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Speed & Capacity Upgrades</li>
+                        <li><i class="fa-solid fa-check"></i> Safety System Integration</li>
+                        <li><i class="fa-solid fa-check"></i> Pneumatic & Mechanical Retrofit</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="service-title">รับทำระบบไฟฟ้า Control เครื่องจักร</h3>
+                    <p class="service-text">
+                        ออกแบบ ประกอบ และจัดสายตู้ควบคุมไฟฟ้า (Control Cabinet) ตู้ DB ปรับเปลี่ยนสายไฟเก่า เปลี่ยน
+                        Inverter/VFD พร้อมระบบป้องกันไฟฟ้าลัดวงจรมาตรฐานสูง
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> Control Panel Wiring & Design</li>
+                        <li><i class="fa-solid fa-check"></i> VFD / Inverter Speed Control</li>
+                        <li><i class="fa-solid fa-check"></i> Circuit Protection & Safety Relays</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card highlight-card">
+                    <div class="card-glow"></div>
+                    <div class="service-badge">Mitsubishi & Omron Specialized</div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="service-title">ระบบ PLC & HMI Control</h3>
+                    <p class="service-text">
+                        เขียนโปรแกรมควบคุมอัตโนมัติ ออกแบบหน้าจอ HMI Touchscreen เชื่อมต่อสัญญาณ Sensor และระบบ Alarm
+                        เพื่อการควบคุมเครื่องจักรที่แม่นยำและเสถียรสูงสุด
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> PLC Programming (Mitsubishi & Omron)</li>
+                        <li><i class="fa-solid fa-check"></i> Custom HMI Touchscreen Design</li>
+                        <li><i class="fa-solid fa-check"></i> Troubleshooting & Logic Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mitsubishi & Omron Focus Showcase Section -->
+    <section class="plc-showcase-section" id="plc-showcase">
+        <div class="container">
+            <div class="plc-wrapper">
+                <div class="plc-content">
+                    <span class="section-subtitle">AUTOMATION EXPERTISE</span>
+                    <h2 class="section-title">เชี่ยวชาญพิเศษด้านระบบ PLC & HMI</h2>
+                    <p class="plc-desc">
+                        หน่วยงาน ServiceEngineering
+                        มุ่งเน้นการให้บริการด้วยฮาร์ดแวร์และซอฟต์แวร์มาตรฐานระดับอุตสาหกรรมโลก โดยเน้นย้ำความเชี่ยวชาญ 2
+                        แบรนด์หลัก:
+                    </p>
+
+                    <div class="brand-cards-grid">
+                        <!-- Mitsubishi Brand -->
+                        <div class="brand-card">
+                            <div class="brand-header">
+                                <div class="brand-logo-badge mitsubishi">MITSUBISHI</div>
+                                <span class="brand-tag">FX / Q / iQ-R Series</span>
+                            </div>
+                            <h4 class="brand-name">Mitsubishi Electric PLC & HMI</h4>
+                            <p class="brand-text">
+                                พัฒนา Logic Control ด้วย GX Works2 / GX Works3 รองรับระบบ High-speed counter, Motion
+                                control และการเชื่อมต่อหน้าจอ GOT Series ทุกขนาด
+                            </p>
+                            <div class="brand-features">
+                                <span><i class="fa-solid fa-check-circle"></i> MELSEC Architecture</span>
+                                <span><i class="fa-solid fa-check-circle"></i> GOT Touchscreen HMI</span>
+                            </div>
+                        </div>
+
+                        <!-- Omron Brand -->
+                        <div class="brand-card">
+                            <div class="brand-header">
+                                <div class="brand-logo-badge omron">OMRON</div>
+                                <span class="brand-tag">CP1 / CJ2 / NX / NJ Series</span>
+                            </div>
+                            <h4 class="brand-name">Omron Automation PLC & HMI</h4>
+                            <p class="brand-text">
+                                ออกแบบโปรแกรมด้วย Sysmac Studio และ CX-Programmer การเขียนเรียบง่าย เสถียรสูง
+                                เชื่อมต่อกับจอ NB/NS Series Touchscreen และระบบ Safety Omron
+                            </p>
+                            <div class="brand-features">
+                                <span><i class="fa-solid fa-check-circle"></i> Sysmac Studio & CX</span>
+                                <span><i class="fa-solid fa-check-circle"></i> NB/NS HMI Interfaces</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Drive Online Photo Gallery Showcase -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">REAL PROJECT PORTFOLIO</span>
+                <h2 class="section-title">ภาพผลงานการปฏิบัติงานจริง</h2>
+                <p class="section-desc">
+                    รวมภาพผลงานการซ่อมบำรุงเชิงลึก Overhaul ตู้ควบคุมไฟฟ้า และระบบอัตโนมัติจากสถานที่ปฏิบัติงานจริง
+                </p>
+            </div>
+
+            <!-- Dynamic Online Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Photo Item 1 -->
+                <div class="gallery-item" data-category="team overhaul">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1iw2Fa0jbUHhJ0E7RRrEz7qRabqOqduM1"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1iw2Fa0jbUHhJ0E7RRrEz7qRabqOqduM1&sz=w1000'"
+                            alt="Inspection Conveyor Machinery" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">ตู้ControlPanel SDYP3</span>
+                                <h4 class="gallery-title">งานปรับปรุงตู้Control PLC+HMI</h4>
+                                <p>ปรับปรุงระบบControlเครื่อง SDY Plant3 พร้อมจัดทำระบบSave Manuเพื่อให้ง่ายต่อการใช้งาน
+                                </p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1iw2Fa0jbUHhJ0E7RRrEz7qRabqOqduM1"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 2 -->
+                <div class="gallery-item" data-category="plc">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1I4MSs1wZ7SLlGr75lRgBlzRcTOQC7Xdd"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1I4MSs1wZ7SLlGr75lRgBlzRcTOQC7Xdd&sz=w1000'"
+                            alt="PLC Control Panel Wiring" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">ตู้Control ระบบRelay</span>
+                                <h4 class="gallery-title">งานปรับปรุงตู้Control </h4>
+                                <p>งานปรับปรุงระบบControl
+                                    ให้รองรับกับอะไหล่ที่มีอยยู่ในบริษัทเพื่อความรวดเร็วในการซ่อมบำรุง</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1I4MSs1wZ7SLlGr75lRgBlzRcTOQC7Xdd"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 3 -->
+                <div class="gallery-item" data-category="overhaul">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1vh6vp3zJ9iZj__uR6vBzz8Yf-wG2fbiS"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1vh6vp3zJ9iZj__uR6vBzz8Yf-wG2fbiS&sz=w1000'"
+                            alt="Mechanical Heavy Overhaul" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">งาน Modify เครื่องจักร</span>
+                                <h4 class="gallery-title">งานปรับปรุงเครื่องจักร COK</h4>
+                                <p>การ Modify ระบบControlเพื่อรองรับระบบ Auto</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1vh6vp3zJ9iZj__uR6vBzz8Yf-wG2fbiS"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 4 -->
+                <div class="gallery-item" data-category="plc overhaul">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1UYLQWLjQPTwdiX5yYDqzQC24yMqquX6o"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1UYLQWLjQPTwdiX5yYDqzQC24yMqquX6o&sz=w1000'"
+                            alt="HMI Touchscreen Testing" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">งานตู้Control Panel</span>
+                                <h4 class="gallery-title">เพิ่มOptionให้เครื่องจักรเก่า</h4>
+                                <p>งานปรับปรุงเพื่อเพิ่มOptionให้เครื่องจักรเก่า ให้สามารถรองรับการทำงานได้ตามPocess
+                                    ในปัจจุบัน</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1UYLQWLjQPTwdiX5yYDqzQC24yMqquX6o"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 5 -->
+                <div class="gallery-item" data-category="plc">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1-Ptb-xROFUnSHcw8o1pDxjDLtf5mW2Ex"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1-Ptb-xROFUnSHcw8o1pDxjDLtf5mW2Ex&sz=w1000'"
+                            alt="PLC Module Calibration" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">งานปรับปรุง จัดเก็บสาย</span>
+                                <h4 class="gallery-title">งานเข้าสายและตรวจสอบโมดูล PLC</h4>
+                                <p>งานปรับปรุงระบบ Control และจัดเก็บสายไฟให้สวยงาม</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1-Ptb-xROFUnSHcw8o1pDxjDLtf5mW2Ex"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 6 -->
+                <div class="gallery-item" data-category="overhaul">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1Hu8HcfA21SLpGMVD0lUWW_UeLJwmXvGx"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1Hu8HcfA21SLpGMVD0lUWW_UeLJwmXvGx&sz=w1000'"
+                            alt="Conveyor Frame Rebuild" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag" Overhaul เครื่องจักร</span>
+                                    <h4 class="gallery-title"></h4>
+                                    <p></p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1Hu8HcfA21SLpGMVD0lUWW_UeLJwmXvGx"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 7 -->
+                <div class="gallery-item" data-category="plc">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1AORYcrGLtXWiEVriQoYShuug34OQ7VKZ"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1AORYcrGLtXWiEVriQoYShuug34OQ7VKZ&sz=w1000'"
+                            alt="Cabinet Detail Wiring" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">ตู้ไฟฟ้า & PLC</span>
+                                <h4 class="gallery-title">งานเข้าสายความละเอียดสูงในตู้ควบคุม</h4>
+                                <p>เดินสายร้อยท่อรางตู้และมาร์กหมายเลขสายถูกต้องตามวงจร</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1AORYcrGLtXWiEVriQoYShuug34OQ7VKZ"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 8 -->
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/1wA5vjEKh4uDmO645seo2b5_D6O2J_hWu"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=1wA5vjEKh4uDmO645seo2b5_D6O2J_hWu&sz=w1000'"
+                            alt="Engineering Team Photo" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">ทีมวิศวกร</span>
+                                <h4 class="gallery-title">ทีมวิศวกร ServiceEngineering พร้อมให้บริการ</h4>
+                                <p>บุคลากรผู้เชี่ยวชาญพร้อมปฏิบัติงาน</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/1wA5vjEKh4uDmO645seo2b5_D6O2J_hWu"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Item 9 -->
+                <div class="gallery-item" data-category="plc overhaul">
+                    <div class="gallery-card">
+                        <img src="https://lh3.googleusercontent.com/d/169nlscglYzazqMRT_UAN_igF81Pb2OSU"
+                            referrerpolicy="no-referrer"
+                            onerror="this.src='https://drive.google.com/thumbnail?id=169nlscglYzazqMRT_UAN_igF81Pb2OSU&sz=w1000'"
+                            alt="Relay Precision Hand Tools Wiring" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-tag">ตู้ไฟฟ้า & PLC</span>
+                                <h4 class="gallery-title">งานบีบย้ำหางปลาและเข้าสายฐานรีเลย์</h4>
+                                <p>ใช้อุปกรณ์เครื่องมือวัดและเข้าสายมาตรฐานสูง</p>
+                            </div>
+                            <button class="btn-lightbox"
+                                data-img="https://lh3.googleusercontent.com/d/169nlscglYzazqMRT_UAN_igF81Pb2OSU"
+                                aria-label="ขยายภาพ">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quote & Service Estimator -->
+    <section class="estimator-section" id="estimator">
+        <div class="container">
+            <div class="estimator-card-wrapper">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">INTERACTIVE QUOTE ESTIMATOR</span>
+                    <h2 class="section-title">เครื่องมือประเมินเนื้องาน & ระยะเวลาเบื้องต้น</h2>
+                    <p class="section-desc">เลือกประเภทบริการที่ต้องการ
+                        เพื่อคำนวณแผนการประเมินเบื้องต้นและส่งไปยังวิศวกร</p>
+                </div>
+
+                <div class="estimator-grid">
+                    <!-- Form Controls -->
+                    <div class="estimator-controls">
+                        <div class="form-group">
+                            <label class="form-label"><i class="fa-solid fa-list-check"></i> 1.
+                                เลือกขอบเขตงานที่ต้องการ:</label>
+                            <select id="est-service-type" class="form-select">
+                                <option value="overhaul">Overhaul เครื่องจักรเต็มรูปแบบ (Complete Machine Rebuild)
+                                </option>
+                                <option value="modify">ปรับปรุง/Retrofit เพิ่มประสิทธิภาพเครื่องจักร (Machine
+                                    Modification)</option>
+                                <option value="electrical">ทำตู้ควบคุมไฟฟ้า & เดินสายใหม่ (Electrical Control Cabinet)
+                                </option>
+                                <option value="plc">เขียนโปรแกรม PLC & ออกแบบ HMI (Mitsubishi / Omron)</option>
+                                <option value="full">Overhaul เครื่องจักร + ทำตู้ควบคุมไฟฟ้า + ระบบ PLC HMI ครบวงจร
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><i class="fa-solid fa-cubes"></i> 2.
+                                ขนาด/ความซับซ้อนของเครื่องจักร:</label>
+                            <div class="radio-cards">
+                                <label class="radio-card">
+                                    <input type="radio" name="est-size" value="small" checked>
+                                    <div class="radio-content">
+                                        <strong>ขนาดเล็ก / เดี่ยว</strong>
+                                        <small>เครื่องจักร Standalone 1-2 Station</small>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="est-size" value="medium">
+                                    <div class="radio-content">
+                                        <strong>ขนาดกลาง / สายผลิต</strong>
+                                        <small>เครื่องจักรมีระบบลำเลียง 3-5 Station</small>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="est-size" value="large">
+                                    <div class="radio-content">
+                                        <strong>ขนาดใหญ่ / สายผลิตหลัก</strong>
+                                        <small>เครื่องจักรซับซ้อนหลายจุดเชื่อมต่อ</small>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><i class="fa-solid fa-microchip"></i> 3. ระบบควบคุม PLC ที่ระบุ
+                                (ถ้ามี):</label>
+                            <select id="est-plc-brand" class="form-select">
+                                <option value="mitsubishi">Mitsubishi PLC (FX / Q / iQ-R Series)</option>
+                                <option value="omron">Omron PLC (CP1 / CJ2 / NX Series)</option>
+                                <option value="both">ผสมผสาน Mitsubishi & Omron</option>
+                                <option value="consult">ให้วิศวกรประเมินแบรนด์ที่เหมาะสม</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Live Estimation Summary Output -->
+                    <div class="estimator-result">
+                        <div class="result-glass-box">
+                            <div class="result-header">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <h3>สรุปการประเมินเบื้องต้น</h3>
+                            </div>
+                            <div class="result-body">
+                                <div class="result-item">
+                                    <span class="label">ระยะเวลาประมาณการ:</span>
+                                    <span class="valueHighlight" id="est-time-output">3 - 5 วันทำการ</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="label">ระดับความซับซ้อน:</span>
+                                    <span class="badge" id="est-complexity-output">ปานกลาง (Medium)</span>
+                                </div>
+                                <div class="result-divider"></div>
+                                <div class="result-checklist">
+                                    <strong>สิ่งที่รวมในบริการ:</strong>
+                                    <ul id="est-deliverables-list">
+                                        <li><i class="fa-solid fa-check"></i> เข้าสำรวจเครื่องจักรหน้างาน (Site Survey)
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> รายงานถอดประกอบและวิเคราะห์จุดสึกหรอ</li>
+                                        <li><i class="fa-solid fa-check"></i> ทดสอบสอบทานการทำงานก่อนส่งมอบ (FAT)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="result-footer">
+                                <button type="button" class="btn btn-primary btn-block" id="btn-apply-quote">
+                                    <i class="fa-solid fa-file-import"></i>
+                                    <span>ส่งรายละเอียดนี้ไปยังแบบฟอร์มติดต่อ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-col">
+                    <span class="section-subtitle">GET IN TOUCH</span>
+                    <h2 class="section-title">ส่งข้อมูลติดต่อกลับถึงวิศวกร</h2>
+                    <p class="contact-text">
+                        กรอกข้อมูลรายละเอียดงานของท่าน
+                        ระบบจะทำการส่งข้อมูลตรงไปยังอีเมลของทีมวิศวกรผู้เชี่ยวชาญเพื่อติดต่อกลับโดยเร็วที่สุด
+                    </p>
+
+                    <div class="email-target-box">
+                        <div class="box-icon">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <div class="box-details">
+                            <strong>ข้อมูลจะถูกส่งตรงไปที่ Email:</strong>
+                            <div class="email-badges">
+                                <a href="mailto:rachensap@cpram.co.th" class="email-badge"><i
+                                        class="fa-solid fa-envelope"></i> rachensap@cpram.co.th</a>
+                                <a href="mailto:paitoonchi@cpram.co.th" class="email-badge"><i
+                                        class="fa-solid fa-envelope"></i> paitoonchi@cpram.co.th</a>
+                                <a href="mailto:wasannar@cpram.co.th" class="email-badge"><i
+                                        class="fa-solid fa-envelope"></i> wasannar@cpram.co.th</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="item-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <strong>เวลาทำการประเมินงาน</strong>
+                                <p>จันทร์ - ศุกร์: 08:00 - 17:00 น.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <strong>การรับประกันงาน Overhaul</strong>
+                                <p>รับประกันงานประกอบ ซ่อมบำรุง และระบบ PLC ตามข้อตกลงวิศวกรรม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-form-col">
+                    <form class="contact-form" id="service-contact-form">
+                        <h3 class="form-title"><i class="fa-solid fa-pen-to-square"></i> แบบฟอร์มแจ้งรายละเอียดงาน</h3>
+
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="form-name" class="form-label">ชื่อผู้ติดต่อ <span
+                                        class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="form-name" name="name" class="form-control"
+                                        placeholder="ชื่อ-นามสกุล ของท่าน" required>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="form-org" class="form-label">หน่วยงาน / บริษัท <span
+                                        class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-building"></i>
+                                    <input type="text" id="form-org" name="organization" class="form-control"
+                                        placeholder="ชื่อหน่วยงาน หรือ บริษัท" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="form-email" class="form-label">Email บริษัท / องค์กร <span
+                                        class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="form-email" name="company_email" class="form-control"
+                                        placeholder="example@company.co.th" required>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="form-phone" class="form-label">ข้อมูลติดต่อกลับ / เบอร์โทร <span
+                                        class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" id="form-phone" name="phone" class="form-control"
+                                        placeholder="08X-XXX-XXXX หรือ เบอร์ภายใน" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-service" class="form-label">ประเภทงานที่สนใจ</label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-sliders"></i>
+                                <select id="form-service" name="service_type" class="form-control form-select">
+                                    <option value="Overhaul เครื่องจักร">Overhaul เครื่องจักร (Machine Overhaul)
+                                    </option>
+                                    <option value="ปรับปรุง เครื่องจักร">ปรับปรุง เครื่องจักร (Modify / Retrofit)
+                                    </option>
+                                    <option value="รับทำระบบไฟฟ้า Control เครื่องจักร">รับทำระบบไฟฟ้า Control
+                                        เครื่องจักร</option>
+                                    <option value="ระบบ PLC HMI (Mitsubishi)">ระบบ PLC HMI (Mitsubishi)</option>
+                                    <option value="ระบบ PLC HMI (Omron)">ระบบ PLC HMI (Omron)</option>
+                                    <option value="บริการครบวงจร (Full Package)">บริการครบวงจร (Full Package)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-details" class="form-label">รายละเอียดงาน / สเปคเครื่องจักร / ปัญหา <span
+                                    class="req">*</span></label>
+                            <textarea id="form-details" name="details" class="form-control" rows="4"
+                                placeholder="ระบุประเภทเครื่องจักร อาการชำรุด หรือฟังก์ชั่นที่ต้องการให้ปรับปรุง..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-lg btn-primary btn-glow btn-block"
+                                id="btn-submit-form">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>ส่งข้อมูลติดต่อกลับทันที</span>
+                            </button>
+
+                            <button type="button" class="btn btn-outline btn-block mt-2" id="btn-mailto-fallback">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span>เปิดโปรแกรมอีเมลเพื่อส่งข้อมูล (ต้องกดส่งในโปรแกรมอีกครั้ง)</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="brand-logo">
+                        <div class="logo-icon"><i class="fa-solid fa-gears"></i></div>
+                        <div class="logo-text">
+                            <span class="brand-name">Service<span class="highlight">Engineering</span></span>
+                            <span class="brand-sub">OVERHAUL & AUTOMATION</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        หน่วยงาน ServiceEngineering บริการงาน Overhaul เครื่องจักร ปรับปรุงสมรรถภาพตู้ระบบไฟฟ้า
+                        และโปรแกรม PLC HMI (Mitsubishi & Omron) สำหรับอุตสาหกรรม
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="#services">ขอบเขตบริการ</a></li>
+                        <li><a href="#plc-showcase">ระบบ PLC Mitsubishi & Omron</a></li>
+                        <li><a>ภาพผลงานจริงจาก Google Drive</a></li>
+                        <li><a href="#estimator">เครื่องมือประเมินราคา</a></li>
+                        <li><a href="#contact">ส่งข้อมูลติดต่อ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4>ช่องทางติดต่อทีมวิศวกร</h4>
+                    <p><i class="fa-solid fa-envelope"></i> rachensap@cpram.co.th</p>
+                    <p><i class="fa-solid fa-envelope"></i> paitoonchi@cpram.co.th</p>
+                    <p><i class="fa-solid fa-envelope"></i> wasannar@cpram.co.th</p>
+                    <p><i class="fa-solid fa-location-dot"></i> หน่วยงาน ServiceEngineering (Overhaul)</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 ServiceEngineering (Overhaul). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Photo Viewing -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="Full Resolution View" class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Submission Confirmation Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content-glass">
+            <div class="modal-header text-center">
+                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>ระบบรับข้อมูลเรียบร้อยแล้ว!</h3>
+            </div>
+            <div class="modal-body text-center">
+                <p>ระบบรับข้อมูลเพื่อส่งอีเมลแจ้งทีมงานแล้ว</p>
+                <div class="summary-box text-left" id="modal-summary-box">
+                    <!-- Summary text injected here by JS -->
+                </div>
+            </div>
+            <div class="modal-footer text-center">
+                <button class="btn btn-primary" id="modal-close-btn">ตกลง / ปิดหน้าต่าง</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
