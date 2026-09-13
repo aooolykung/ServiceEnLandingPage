@@ -291,7 +291,7 @@ function initContactForm() {
     const targetEmails = ['wasannar@cpram.co.th'];
     // Create a key for wasannar@cpram.co.th at https://web3forms.com/
     // Web3Forms sends to the email associated with this key.
-    const web3FormsAccessKey = '';
+    const web3FormsAccessKey = 'cc8ae958-594a-4b31-af78-bf8003a93c08';
 
     // Handle Mailto fallback compose link
     if (mailtoBtn) {
